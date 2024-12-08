@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/resposive.css">
+
+    <title>Formulário de validação</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="nota">
+        <h1>
+          FICOU COM DÚVIDA? <br />
+          NOS MANDE UMA MENSAGEM!
+        </h1>
+        <p>
+          caso tenha ficado com quealquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+
+      <form method="post" class="formulário" id="form">
+        <div class="caixa-de-dados">
+          <input
+            class="dados"
+            name="nome"
+            type="text"
+            placeholder="Nome completo*"
+            id="nome"
+          />
+          <label class="alerta" for="nome">campo obrigatório</label>
+        </div>
+
+        <div class="caixa-de-dados">
+          <input
+            class="dados"
+            name="email"
+            type="text"
+            placeholder="email*"
+            id="email"
+          />
+          <label class="alerta" for="email">campo obrigatório</label>
+        </div>
+
+        <div class="caixa-de-dados">
+          <input
+            class="dados"
+            type="text"
+            placeholder="Telefone*"
+            name="telefone"
+            id="telefone"
+          />
+          <label class="alerta" for="telefone">campo obrigatório</label>
+        </div>
+
+        <div class="caixa-de-dados">
+          <textarea
+            class="mensagem dados"
+            placeholder="Mensagem*"
+          ></textarea>
+          <label class="alerta">campo obrigatório</label>
+        </div>
+
+        <p class="informativo">*campos obrigatórios</p>
+
+        <input type="button" value="Enviar" class="bnt-enviar" id="enviar-formulário">
+    </main>
+
+    <script src="src/js/validação-de-formulário.js"></script>
+  </body>
+</html>
