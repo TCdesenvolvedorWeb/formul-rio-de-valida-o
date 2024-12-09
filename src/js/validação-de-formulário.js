@@ -1,9 +1,7 @@
 let dados = document.querySelectorAll(".dados");
 const enviarFormulário = document.getElementById("enviar-formulário");
 
-enviarFormulário.addEventListener("click", () => {
-  validação();
-});
+enviarFormulário.addEventListener("click", () => validação());
 
 function validação() {
   dados.forEach((item) => {
